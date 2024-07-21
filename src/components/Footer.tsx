@@ -40,7 +40,7 @@ export const Footer: FunctionComponent<FooterProps> = ({
   }, [useTestAadhaar]);
 
   return (
-    <div className="relative">
+    <div className="bg-black text-white relative">
       <Toaster isDisplayed={isDisplayed} setIsDisplayed={setIsDisplayed} />
       <footer className="h-24 shadow-[0px_-5px_14px_0px_rgba(48,49,51,0.05)]">
         <div className="w-full mx-auto max-w-screen-xl h-full p-4 flex items-center justify-between">
@@ -49,7 +49,7 @@ export const Footer: FunctionComponent<FooterProps> = ({
             rel={"noreferrer"}
             href="https://documentation.anon-aadhaar.pse.dev/docs/quick-setup"
           >
-            <div className="flex flex-row text-sm items-center text-black font-rajdhani font-medium gap-1 hover:underline">
+            <div className="flex flex-row text-sm items-center text- font-rajdhani font-medium gap-1 hover:underline">
               <p className="leading-none text-lg pt-1">TUTORIAL</p>
               <Image
                 priority
@@ -62,7 +62,7 @@ export const Footer: FunctionComponent<FooterProps> = ({
             </div>
           </a>
           <div className="flex flex-row justify-center items-center gap-8">
-            <p className="text-lg text-black font-rajdhani font-medium underline">
+            <p className="text-lg  font-rajdhani font-medium underline">
               {shortenAddress("0x" + contractAddr?.toUpperCase())}
             </p>
             <a
@@ -75,6 +75,7 @@ export const Footer: FunctionComponent<FooterProps> = ({
                 src={imgGithub}
                 width={25}
                 height={25}
+                className="bg-white rounded-full"
               ></Image>
             </a>
           </div>

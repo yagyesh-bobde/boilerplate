@@ -1,4 +1,7 @@
-# Anon Aadhaar Boilerplate
+# Anon Aadhaar Updated UI 
+
+<!-- add an image -->
+![UI updated](./public/output.png)
 
 This is an example app showing how to integrate the [Anon Aadhaar](https://github.com/anon-aadhaar/anon-aadhaar).
 

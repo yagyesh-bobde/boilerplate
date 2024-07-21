@@ -54,10 +54,10 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col min-h-[75vh] mx-auto justify-center items-center w-full p-4">
+      <main className="bg-black text-white flex flex-col min-h-[75vh] mx-auto justify-center items-center w-full p-4">
         <div className="max-w-4xl w-full">
           <h6 className="text-[36px] font-rajdhani font-medium leading-none">
-            ANON AADHAAR
+            ANON ASSIGNMENT 
           </h6>
           <h2 className="text-[90px] font-rajdhani font-medium leading-none">
             EXAMPLE VOTING APP

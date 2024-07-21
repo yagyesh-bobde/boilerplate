@@ -13,7 +13,7 @@ export const Header: FunctionComponent = () => {
   const { open } = useWeb3Modal();
 
   return (
-    <header className="flex flex-row justify-between">
+    <header className="bg-black text-white flex flex-row justify-between">
       <div className="flex flex-row items-center mx-5">
         <Image
           priority

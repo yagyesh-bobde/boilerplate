@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <WagmiProvider config={wagmiConfig}>
             <QueryClientProvider client={queryClient}>
               <AnonAadhaarProvider>
-                <div className="relative min-h-screen flex flex-col justify-between">
+                <div className="relative bg-black text-white min-h-screen flex flex-col justify-between">
                   <div className="flex-grow">
                     <Header />
                     <Component {...pageProps} />
@@ -76,6 +76,10 @@ export default function App({ Component, pageProps }: AppProps) {
                     isDisplayed={isDisplayed}
                     setIsDisplayed={setIsDisplayed}
                   />
+
+
+                  <div className="absolute z-10 bottom-10 -left-40 w-[250px] h-[250px] bg-blue-700 rounded-full blur-2xl" />
+                  <div className="absolute z-10 top-10 -right-40 w-[250px] h-[250px] bg-blue-700 rounded-full blur-2xl" />
                 </div>
               </AnonAadhaarProvider>
             </QueryClientProvider>
